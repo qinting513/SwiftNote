@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		75BE32DDEE9333D692CCD271 /* Pods_HandyJSONDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4D64E3E824BDF0871557B8 /* Pods_HandyJSONDemo.framework */; };
+		B72309861DD9AB07009B7655 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = B72309851DD9AB07009B7655 /* main.json */; };
+		B72309881DD9AB52009B7655 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72309871DD9AB52009B7655 /* SwiftyJSON.swift */; };
 		B7258FEA1DD94D4C009ED597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7258FE91DD94D4C009ED597 /* AppDelegate.swift */; };
 		B7258FEC1DD94D4C009ED597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7258FEB1DD94D4C009ED597 /* ViewController.swift */; };
 		B7258FEF1DD94D4C009ED597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7258FED1DD94D4C009ED597 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		2861EC13E781E3AB78A0571B /* Pods-HandyJSONDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyJSONDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandyJSONDemo/Pods-HandyJSONDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3EB383C74B657A5F4FB90150 /* Pods-HandyJSONDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyJSONDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandyJSONDemo/Pods-HandyJSONDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B72309851DD9AB07009B7655 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		B72309871DD9AB52009B7655 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		B7258FE61DD94D4C009ED597 /* HandyJSONDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandyJSONDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7258FE91DD94D4C009ED597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7258FEB1DD94D4C009ED597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		B7258FE81DD94D4C009ED597 /* HandyJSONDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B72309851DD9AB07009B7655 /* main.json */,
+				B72309871DD9AB52009B7655 /* SwiftyJSON.swift */,
 				B7258FE91DD94D4C009ED597 /* AppDelegate.swift */,
 				B7258FEB1DD94D4C009ED597 /* ViewController.swift */,
 				B7258FED1DD94D4C009ED597 /* Main.storyboard */,
@@ -153,6 +159,7 @@
 			files = (
 				B7258FF41DD94D4C009ED597 /* LaunchScreen.storyboard in Resources */,
 				B7258FF11DD94D4C009ED597 /* Assets.xcassets in Resources */,
+				B72309861DD9AB07009B7655 /* main.json in Resources */,
 				B7258FEF1DD94D4C009ED597 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72309881DD9AB52009B7655 /* SwiftyJSON.swift in Sources */,
 				B7258FEC1DD94D4C009ED597 /* ViewController.swift in Sources */,
 				B7258FEA1DD94D4C009ED597 /* AppDelegate.swift in Sources */,
 			);

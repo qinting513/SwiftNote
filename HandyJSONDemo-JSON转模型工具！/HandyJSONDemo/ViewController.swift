@@ -17,14 +17,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.testAnimal()
-//        self.testCat()
-//        self.testQiantao()
-//        self.testNote()
-//        self.testInherit()
-//        self.testCustomParse()
+//        self.testAnimal()           // 简单的json
+//        self.testCat()             // 稍复杂点的，各类型都有的
+//        self.testQiantao()        //测试嵌套
+//        self.testNote()          // 指定某个节点的
+//        self.testInherit()      // 有继承关系的
+//        self.testCustomParse()  // 网络返回json跟自己定义的key 需进行匹配的
+        self.parseMainJson()      //解析根节点是数组的，并且有嵌套的
         
-        modelToJOSN()
+//        modelToJOSN()     //model 转 json
     }
 
 }
@@ -154,7 +155,6 @@ struct Composition: HandyJSON {
     var num: Int?
     var comp1: Component?
     var comp2: Component?
-    
 }
 
 class Mouse: HandyJSON {
@@ -175,6 +175,58 @@ class Mouse: HandyJSON {
             let parentNames = rawString.characters.split{$0 == "/"}.map(String.init)
             return (parentNames[0], parentNames[1])
         }
+    }
+}
+
+/* ======================== 模拟解析网络请求回来的数据 根节点是数组 ========================= */
+
+/*模型类*/
+class MainModel : HandyJSON {
+    let clsName : String? = ""
+    let title : String? = ""
+    let imageName : String = ""
+    let visitorInfo : VisitorInfo? = nil
+    
+    required init() { }
+    
+}
+
+class VisitorInfo : HandyJSON {
+    let imageName : String? = ""
+    let message : String? = ""
+    
+    required init() { }
+}
+
+extension ViewController {
+    /// 解析数据 方法
+    func parseMainJson() {
+        //        获取沙盒json
+        let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let jsonPath = (docDir as NSString).appendingPathComponent("main.json")
+        var  data = NSData(contentsOfFile: jsonPath)
+        if data  == nil {
+            //        如果沙盒里的为空 则从bundle里获取
+            let   path = Bundle.main.path(forResource: "main.json", ofType: nil)
+            data = NSData(contentsOfFile: path!)
+        }
+        //  先通过SwiftyJSON将data类型序列化成JSON格式，再转成String类型
+        let json = JSON(data:data as! Data).rawString()
+        // 需要用 deserializeModelArrayFrom 解析根节点是数组的
+        if let mainModelArray : [MainModel?] = JSONDeserializer.deserializeModelArrayFrom(json: json) {
+            
+            for model in mainModelArray {
+                if let clsName = model?.clsName,
+                   let title = model?.title,    // 这样子 中间有个模块没其他数据 就没显示出来,可分条写
+                   let message = model?.visitorInfo?.message {
+                    print(clsName)
+                    print(title)
+                    print(message)
+                    print("======================")
+                }
+            }
+        }
+        
     }
 }
 
