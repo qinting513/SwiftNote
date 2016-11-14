@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75BE32DDEE9333D692CCD271 /* Pods_HandyJSONDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4D64E3E824BDF0871557B8 /* Pods_HandyJSONDemo.framework */; };
+		B7258FEA1DD94D4C009ED597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7258FE91DD94D4C009ED597 /* AppDelegate.swift */; };
+		B7258FEC1DD94D4C009ED597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7258FEB1DD94D4C009ED597 /* ViewController.swift */; };
+		B7258FEF1DD94D4C009ED597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7258FED1DD94D4C009ED597 /* Main.storyboard */; };
+		B7258FF11DD94D4C009ED597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7258FF01DD94D4C009ED597 /* Assets.xcassets */; };
+		B7258FF41DD94D4C009ED597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7258FF21DD94D4C009ED597 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2861EC13E781E3AB78A0571B /* Pods-HandyJSONDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyJSONDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandyJSONDemo/Pods-HandyJSONDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3EB383C74B657A5F4FB90150 /* Pods-HandyJSONDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyJSONDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandyJSONDemo/Pods-HandyJSONDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B7258FE61DD94D4C009ED597 /* HandyJSONDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandyJSONDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7258FE91DD94D4C009ED597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7258FEB1DD94D4C009ED597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7258FEE1DD94D4C009ED597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7258FF01DD94D4C009ED597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7258FF31DD94D4C009ED597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7258FF51DD94D4C009ED597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD4D64E3E824BDF0871557B8 /* Pods_HandyJSONDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandyJSONDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7258FE31DD94D4C009ED597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75BE32DDEE9333D692CCD271 /* Pods_HandyJSONDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B68E461B41E90F28ADBF053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4D64E3E824BDF0871557B8 /* Pods_HandyJSONDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C458FFF3EE54AD3DA407AE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2861EC13E781E3AB78A0571B /* Pods-HandyJSONDemo.debug.xcconfig */,
+				3EB383C74B657A5F4FB90150 /* Pods-HandyJSONDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7258FDD1DD94D4C009ED597 = {
+			isa = PBXGroup;
+			children = (
+				B7258FE81DD94D4C009ED597 /* HandyJSONDemo */,
+				B7258FE71DD94D4C009ED597 /* Products */,
+				0C458FFF3EE54AD3DA407AE9 /* Pods */,
+				0B68E461B41E90F28ADBF053 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7258FE71DD94D4C009ED597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7258FE61DD94D4C009ED597 /* HandyJSONDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7258FE81DD94D4C009ED597 /* HandyJSONDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B7258FE91DD94D4C009ED597 /* AppDelegate.swift */,
+				B7258FEB1DD94D4C009ED597 /* ViewController.swift */,
+				B7258FED1DD94D4C009ED597 /* Main.storyboard */,
+				B7258FF01DD94D4C009ED597 /* Assets.xcassets */,
+				B7258FF21DD94D4C009ED597 /* LaunchScreen.storyboard */,
+				B7258FF51DD94D4C009ED597 /* Info.plist */,
+			);
+			path = HandyJSONDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7258FE51DD94D4C009ED597 /* HandyJSONDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7258FF81DD94D4C009ED597 /* Build configuration list for PBXNativeTarget "HandyJSONDemo" */;
+			buildPhases = (
+				F540F59E29B8694C918CB3D3 /* [CP] Check Pods Manifest.lock */,
+				B7258FE21DD94D4C009ED597 /* Sources */,
+				B7258FE31DD94D4C009ED597 /* Frameworks */,
+				B7258FE41DD94D4C009ED597 /* Resources */,
+				5889507FB4CCC36077C927FA /* [CP] Embed Pods Frameworks */,
+				CD715206DDAF560F831D8421 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandyJSONDemo;
+			productName = HandyJSONDemo;
+			productReference = B7258FE61DD94D4C009ED597 /* HandyJSONDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7258FDE1DD94D4C009ED597 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = QT;
+				TargetAttributes = {
+					B7258FE51DD94D4C009ED597 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CW23JJ23BD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B7258FE11DD94D4C009ED597 /* Build configuration list for PBXProject "HandyJSONDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7258FDD1DD94D4C009ED597;
+			productRefGroup = B7258FE71DD94D4C009ED597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7258FE51DD94D4C009ED597 /* HandyJSONDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7258FE41DD94D4C009ED597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7258FF41DD94D4C009ED597 /* LaunchScreen.storyboard in Resources */,
+				B7258FF11DD94D4C009ED597 /* Assets.xcassets in Resources */,
+				B7258FEF1DD94D4C009ED597 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5889507FB4CCC36077C927FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandyJSONDemo/Pods-HandyJSONDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD715206DDAF560F831D8421 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandyJSONDemo/Pods-HandyJSONDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F540F59E29B8694C918CB3D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7258FE21DD94D4C009ED597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7258FEC1DD94D4C009ED597 /* ViewController.swift in Sources */,
+				B7258FEA1DD94D4C009ED597 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7258FED1DD94D4C009ED597 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7258FEE1DD94D4C009ED597 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7258FF21DD94D4C009ED597 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7258FF31DD94D4C009ED597 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7258FF61DD94D4C009ED597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7258FF71DD94D4C009ED597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7258FF91DD94D4C009ED597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2861EC13E781E3AB78A0571B /* Pods-HandyJSONDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CW23JJ23BD;
+				INFOPLIST_FILE = HandyJSONDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Qinting.HandyJSONDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B7258FFA1DD94D4C009ED597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB383C74B657A5F4FB90150 /* Pods-HandyJSONDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CW23JJ23BD;
+				INFOPLIST_FILE = HandyJSONDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Qinting.HandyJSONDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7258FE11DD94D4C009ED597 /* Build configuration list for PBXProject "HandyJSONDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7258FF61DD94D4C009ED597 /* Debug */,
+				B7258FF71DD94D4C009ED597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7258FF81DD94D4C009ED597 /* Build configuration list for PBXNativeTarget "HandyJSONDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7258FF91DD94D4C009ED597 /* Debug */,
+				B7258FFA1DD94D4C009ED597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7258FDE1DD94D4C009ED597 /* Project object */;
+}
