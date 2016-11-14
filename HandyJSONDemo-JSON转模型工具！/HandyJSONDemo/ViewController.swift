@@ -13,6 +13,8 @@ import HandyJSON
 
 class ViewController: UIViewController {
 
+//    可先用swiftyJSON 转化为JSON数据
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.testAnimal()
@@ -98,7 +100,6 @@ extension ViewController {
            print(dog.xxx) // 随便来个属性，没值也不会报错 nil
         }
     }
-
 }
 
 extension ViewController {
@@ -116,10 +117,9 @@ extension ViewController {
          print(mouse.parent)
         }
     }
-    
 }
 
-/* ============================================================ */
+/* ============================模型类================================ */
 
 class Animal: HandyJSON {
     var name: String?
