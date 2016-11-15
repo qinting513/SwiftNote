@@ -9,7 +9,8 @@
 import UIKit
 import HandyJSON
 
-//http://www.cocoachina.com/swift/20161010/17711.html
+//原文：http://www.cocoachina.com/swift/20161010/17711.html
+//课外阅读：[HandyJSON] 设计思路简析] http://www.cocoachina.com/swift/20161109/18010.html
 
 class ViewController: UIViewController {
 
@@ -210,10 +211,16 @@ extension ViewController {
             let   path = Bundle.main.path(forResource: "main.json", ofType: nil)
             data = NSData(contentsOfFile: path!)
         }
-        //  先通过SwiftyJSON将data类型序列化成JSON格式，再转成String类型
+        //方法1: 直接将data数据转化为String
+        let strData = String(data: data as! Data, encoding: String.Encoding.utf8)
+        
+        //方法2:  先通过SwiftyJSON将data类型序列化成JSON格式，再转成String类型，
+        // 感觉方法2比方法1多绕了1步，不是很好
         let json = JSON(data:data as! Data).rawString()
+        print(json)
+        
         // 需要用 deserializeModelArrayFrom 解析根节点是数组的
-        if let mainModelArray : [MainModel?] = JSONDeserializer.deserializeModelArrayFrom(json: json) {
+        if let mainModelArray : [MainModel?] = JSONDeserializer.deserializeModelArrayFrom(json: strData) {
             
             for model in mainModelArray {
                 if let clsName = model?.clsName,
@@ -259,7 +266,7 @@ extension ViewController{
         student.name = "Jack"
         student.gender = .Female
         student.subjects = [Subject(id: 1, name: "math"), Subject(id: 2, name: "English"), Subject(id: 3, name: "Philosophy")]
-        
+        //将Model序列化成json
         print(JSONSerializer.serializeToJSON(object: student)!)
         print(JSONSerializer.serializeToJSON(object: student, prettify: true)!)
     
