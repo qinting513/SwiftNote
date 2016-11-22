@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         view.addSubview(tableView)
         tableView.addSubview(headImageView)
+         headImageView.addSubview(headView)
     }
   
 //    懒加载一个tableview，一个imageView。tableView需要设置它的contentInset。
@@ -37,6 +38,13 @@ class ViewController: UIViewController {
         let imageView = UIImageView.init(frame: CGRect(x: 0, y: -self.imageHeight, width: self.UISCreen_Width, height: self.imageHeight))
         imageView.image = UIImage.init(named: "2.jpg")
         return imageView
+    }()
+    
+    lazy var headView:UIView = {
+        let headV = UIView.init(frame: CGRect(x: self.headImageView.frame.size.width*0.5,
+                                              y: self.headImageView.frame.size.height - 20, width: 30, height: 30))
+        headV.backgroundColor = UIColor.blue
+        return headV
     }()
 }
 
