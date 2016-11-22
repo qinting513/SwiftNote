@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwipeableCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="offSet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-Mr-UPf">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numberOfVisibleItems" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8y-2O-5UW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="showedCyclically" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMv-vt-gmf">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9em-5M-hhi">
+                                <segments>
+                                    <segment title="(5, 5)"/>
+                                    <segment title="(0, 5)"/>
+                                    <segment title="(-5, 5)"/>
+                                    <segment title="(-5, -5)"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeOffset:" destination="BYZ-38-t0r" eventType="valueChanged" id="Oec-SM-TjK"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="62o-tn-hTa">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="6HP-cn-qBg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="3"/>
+                                    <segment title="2"/>
+                                    <segment title="5"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeNumber:" destination="BYZ-38-t0r" eventType="valueChanged" id="CNS-jP-B5T"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSN-Kc-iA2">
+                                <connections>
+                                    <action selector="changeSycllyState:" destination="BYZ-38-t0r" eventType="valueChanged" id="dI6-gz-JCU"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yU3-9Q-xLw" customClass="SwipeableCards" customModule="SwipeableCards" customModuleProvider="target">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="Vus-Go-EGU"/>
+                                    <constraint firstAttribute="height" constant="335" id="dwW-Nt-x45"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yU3-9Q-xLw" firstAttribute="top" secondItem="cMv-vt-gmf" secondAttribute="bottom" constant="30" id="3bx-fU-fo6"/>
+                            <constraint firstItem="cMv-vt-gmf" firstAttribute="leading" secondItem="w8y-2O-5UW" secondAttribute="leading" id="G2X-jZ-YDO"/>
+                            <constraint firstItem="w8y-2O-5UW" firstAttribute="leading" secondItem="MSR-Mr-UPf" secondAttribute="leading" id="Kjm-XC-aEH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9em-5M-hhi" secondAttribute="trailing" id="MJI-Ko-IAo"/>
+                            <constraint firstItem="62o-tn-hTa" firstAttribute="leading" secondItem="w8y-2O-5UW" secondAttribute="trailing" constant="8" id="Taf-ln-Hs9"/>
+                            <constraint firstItem="QSN-Kc-iA2" firstAttribute="top" secondItem="62o-tn-hTa" secondAttribute="bottom" constant="8" id="UMn-cs-Tia"/>
+                            <constraint firstItem="w8y-2O-5UW" firstAttribute="centerY" secondItem="62o-tn-hTa" secondAttribute="centerY" id="WRY-Uj-lHs"/>
+                            <constraint firstItem="yU3-9Q-xLw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WdL-mA-iiX"/>
+                            <constraint firstItem="62o-tn-hTa" firstAttribute="trailing" secondItem="9em-5M-hhi" secondAttribute="trailing" id="c2x-FE-II4"/>
+                            <constraint firstItem="MSR-Mr-UPf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="3" id="dvS-KD-mva"/>
+                            <constraint firstItem="62o-tn-hTa" firstAttribute="top" secondItem="9em-5M-hhi" secondAttribute="bottom" constant="9" id="kmT-fv-2AO"/>
+                            <constraint firstItem="cMv-vt-gmf" firstAttribute="top" secondItem="w8y-2O-5UW" secondAttribute="bottom" constant="17" id="lBe-vg-pll"/>
+                            <constraint firstItem="QSN-Kc-iA2" firstAttribute="trailing" secondItem="62o-tn-hTa" secondAttribute="trailing" id="m8a-DO-cEs"/>
+                            <constraint firstItem="9em-5M-hhi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qRI-OV-Ej9"/>
+                            <constraint firstItem="MSR-Mr-UPf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="wIU-Uu-diX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cards" destination="yU3-9Q-xLw" id="AAc-5O-sfZ"/>
+                        <outlet property="cardsHeight" destination="dwW-Nt-x45" id="jUE-xg-m1B"/>
+                        <outlet property="cardsWidth" destination="Vus-Go-EGU" id="Qqo-DN-xaD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="184"/>
+        </scene>
+    </scenes>
+</document>
